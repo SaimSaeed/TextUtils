@@ -1,16 +1,16 @@
 import './App.css';
-import About from './components/About';
+// import About from './components/About'
 import Navbar from "./components/Navbar"
 import TextForm from "./components/TextForm";
 import React,{useState} from 'react';
 import Alert from './components/Alert';
-import ReactDOM from "react-dom/client";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+// import ReactDOM from "react-dom/client";
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link
+// } from "react-router-dom";
 
 
 
@@ -54,20 +54,20 @@ setTimeout(() => {
   
   return (
     <>
-    <Router>
+    {/* <Router> */}
   <Navbar  title= "TextUtils" aboutText = "About Us" mode= {mode} toggleMode = {toggleMode}/>
   <Alert alert={alert}/>
   <div className='container my-3'>
-    <Switch>
+    {/* <Switch>
 <Route exact path={"/about"}>
   <About/>
 </Route>
-<Route exact path={"/"} >
+<Route exact path={"/"} > */}
 <TextForm showAlert={showAlert}   heading= "Enter Text to Analyze Below"  mode= {mode}/>
-</Route>
-</Switch>
+{/* </Route>
+</Switch> */}
     </div>
-</Router>
+{/* </Router> */}
 
 </>
   );
